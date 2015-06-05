@@ -10,7 +10,7 @@ apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
 echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections
 
 apt-get update
-apt-get install -y oracle-java8-installer
+apt-get install -qq oracle-java8-installer
 
 wget -nv -O atlas.jar https://github.com/Netflix/atlas/releases/download/v${ATLAS_VERSION}/atlas-${ATLAS_VERSION}-standalone.jar
 
