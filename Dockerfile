@@ -9,7 +9,7 @@ EXPOSE 7101
 ADD install /
 RUN /install
 
-ADD atlas.conf /
+ADD atlas.conf /etc/atlas/
 ADD run /
 
 CMD ["/run"]

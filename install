@@ -14,5 +14,7 @@ apt-get install -qq oracle-java8-installer
 
 wget -nv -O atlas.jar https://github.com/Netflix/atlas/releases/download/v${ATLAS_VERSION}/atlas-${ATLAS_VERSION}-standalone.jar
 
+mkdir /etc/atlas
+
 apt-get clean
 rm -rf /var/lib/apt/lists/*
