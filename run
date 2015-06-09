@@ -1,3 +1,5 @@
 #!/bin/sh
 
-exec /usr/bin/java -jar atlas.jar /etc/atlas/atlas.conf
+CONF=${1:-/etc/atlas/atlas.1m.conf}
+
+exec /usr/bin/java -jar atlas.jar "${CONF}"
