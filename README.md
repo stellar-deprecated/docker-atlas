@@ -32,7 +32,7 @@ For example if you want to run with 1s resolution run:
 ```console
 $ docker run --name atlas -p 7101:7101 \
     -d stellar/atlas \
-    /run /etc/atlas/atlas.1s.conf
+    /start /etc/atlas/atlas.1s.conf
 ```
 
 ## Overriding config
@@ -44,5 +44,5 @@ running that configuration like so:
 $ docker run --name atlas -p 7101:7101 \
     -v /path/to/my/conf:/etc/atlas \
     -d stellar/atlas \
-    /run /etc/atlas/my.atlas.conf
+    /start /etc/atlas/my.atlas.conf
 ```
