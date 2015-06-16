@@ -10,6 +10,6 @@ ADD install /
 RUN /install
 
 ADD /conf/* /etc/atlas/
-ADD run /
+ADD start /
 
-CMD ["/run"]
+CMD ["/start"]
